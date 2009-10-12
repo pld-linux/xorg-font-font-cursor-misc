@@ -1,12 +1,12 @@
 Summary:	cursor font
 Summary(pl.UTF-8):	Font cursor
 Name:		xorg-font-font-cursor-misc
-Version:	1.0.0
-Release:	2
+Version:	1.0.1
+Release:	1
 License:	MIT
 Group:		Fonts
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-cursor-misc-%{version}.tar.bz2
-# Source0-md5:	305fa22cdfefb8f80babd711051a534b
+# Source0-md5:	13c21c4d74155c662152a1a74f249d96
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -33,6 +33,8 @@ Font cursor wymagany przez serwer X.
 %{__autoconf}
 %{__automake}
 %configure \
+	--build=%{_host_platform} \
+	--host=%{_host_platform} \
 	--with-fontdir=%{_fontsdir}/misc
 
 %{__make}
