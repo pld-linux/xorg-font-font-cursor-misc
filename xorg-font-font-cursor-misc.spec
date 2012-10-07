@@ -2,7 +2,7 @@ Summary:	cursor font
 Summary(pl.UTF-8):	Font cursor
 Name:		xorg-font-font-cursor-misc
 Version:	1.0.3
-Release:	1
+Release:	2
 License:	MIT
 Group:		Fonts
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-cursor-misc-%{version}.tar.bz2
